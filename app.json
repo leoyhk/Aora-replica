@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Aora-replica",
+    "scheme": "Aora-replica",
     "slug": "Aora-replica",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,6 +23,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }
