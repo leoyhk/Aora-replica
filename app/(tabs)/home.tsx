@@ -1,6 +1,7 @@
 import { View, Text, FlatList, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import LogoSmall from "assets/images/logo-small.png";
+import SearchField from "components/SearchField";
 
 const Home = () => {
   return (
@@ -25,6 +26,12 @@ const Home = () => {
                 ></Image>
               </View>
             </View>
+            <SearchField
+              textInputProps={{
+                placeholder: "Search for a video topic",
+                placeholderTextColor: "#CDCDE0",
+              }}
+            />
           </View>
         )}
         renderItem={({ item }) => <Text>{item.id}</Text>}
